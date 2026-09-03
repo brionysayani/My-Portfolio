@@ -37,31 +37,17 @@ const Coding: React.FC<SectionProps> = ({ isOpen, onToggle }) => {
               className="overflow-hidden"
             >
                 <div className="px-6 md:px-10 pb-10">
-                    <div className="max-w-2xl mx-auto flex flex-col gap-8">
-                        <div className="bg-white border-4 border-black p-8 border-b-8 border-r-8 hover:-translate-y-1 transition-all flex flex-col sm:flex-row items-center gap-6 shadow-neo">
-                            <div className="bg-black p-6 rounded-full border-4 border-custom-yellow flex-shrink-0">
-                                <span className="text-6xl">💻</span>
-                            </div>
-                            <div className="flex flex-col items-start">
-                                <h3 className="text-3xl font-shrikhand text-green-700 mb-2">LeetCode Practice</h3>
-                                <p className="font-bold text-xl mb-3">Data Structures &amp; Algorithms</p>
-                                <p className="text-base font-medium bg-gray-100 p-3 border-2 border-black inline-block mb-3 shadow-[4px_4px_0_rgba(0,0,0,1)]">
-                                    <span className="text-custom-red font-bold underline decoration-custom-red">Problem solving with C++ and Python.</span>
-                                </p>
-                                <a href="https://leetcode.com/u/briony51/" target="_blank" rel="noreferrer" className="font-mono text-sm font-bold bg-custom-blue text-black p-2 border-2 border-black w-fit shadow-[4px_4px_0_rgba(0,0,0,1)] hover:-translate-y-1 transition-transform">
-                                    View LeetCode profile
-                                </a>
-                            </div>
-                        </div>
-
-                        {/* LeetCode Stats Image */}
+                    <div className="max-w-2xl mx-auto flex flex-col items-center gap-6">
                         <div className="w-full flex justify-center hover:-translate-y-1 transition-transform">
                             <img 
                               src="https://leetcard.jacoblin.cool/briony51?theme=chartreuse&font=Share%20Tech%20Mono&ext=heatmap" 
-                              alt="LeetCode Stats" 
+                              alt="Briony's LeetCode activity heatmap" 
                               className="w-full border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] rounded-xl bg-white"
                             />
                         </div>
+                        <a href="https://leetcode.com/u/briony51/" target="_blank" rel="noreferrer" className="font-mono font-bold bg-custom-blue text-black px-5 py-3 border-2 border-black w-fit shadow-[4px_4px_0_rgba(0,0,0,1)] hover:-translate-y-1 hover:shadow-none transition-all">
+                            View LeetCode profile
+                        </a>
                     </div>
                 </div>
             </motion.div>

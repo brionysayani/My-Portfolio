@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaEnvelope, FaCode, FaTimes, FaPhone, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaCode, FaTimes, FaTwitter } from 'react-icons/fa';
 
 interface ContactModalProps {
   isOpen: boolean;
@@ -24,9 +24,6 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
         <div className="flex flex-col gap-4 font-bold">
             <a href="mailto:brionysayani51@gmail.com" className="flex items-center gap-3 p-3 bg-custom-yellow border-2 border-black rounded-xl hover:translate-x-1 hover:shadow-neo-sm transition-all">
                 <FaEnvelope className="text-xl"/> brionysayani51@gmail.com
-            </a>
-            <a href="tel:+919173963018" className="flex items-center gap-3 p-3 bg-custom-green border-2 border-black rounded-xl hover:translate-x-1 hover:shadow-neo-sm transition-all">
-                <FaPhone className="text-xl"/> +91 91739 63018
             </a>
             <a href="https://github.com/brionysayani" target="_blank" rel="noreferrer" className="flex items-center gap-3 p-3 bg-gray-200 border-2 border-black rounded-xl hover:translate-x-1 hover:shadow-neo-sm transition-all">
                 <FaGithub className="text-xl"/> GitHub

@@ -4,7 +4,6 @@ const highlights = [
   '2026 B.Tech graduate from Nirma University',
   'Former AI Automation Intern at Fortiv Solutions',
   'Remote internship · January 2026 to June 2026',
-  'School education at St. Francis School, Jamnagar',
   'Building with LLMs, AI agents, voice AI, Python, and automation',
 ];
 

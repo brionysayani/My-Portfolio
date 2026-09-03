@@ -6,7 +6,7 @@ interface EduProps {
   year: string;
   title: string;
   place: string;
-  details: React.ReactNode;
+  details?: React.ReactNode;
   color: string;
 }
 
@@ -21,9 +21,11 @@ const EduCard = ({ year, title, place, details, color }: EduProps) => (
     <div className="mt-2">
       <h3 className="text-xl font-shrikhand leading-tight mb-1">{title}</h3>
       <p className="font-bold text-sm text-gray-700 mb-2">{place}</p>
-      <div className="text-sm font-medium bg-white/60 p-2 rounded-lg border-2 border-black/10">
-        {details}
-      </div>
+      {details && (
+        <div className="text-sm font-medium bg-white/60 p-2 rounded-lg border-2 border-black/10">
+          {details}
+        </div>
+      )}
     </div>
   </div>
 );
@@ -215,9 +217,9 @@ const Education = () => {
     {
       year: "2021-2026",
       title: "B.Tech - Electronics & Instrumentation Engineering",
-      place: "Nirma University",
+      place: "Nirma University, Ahmedabad, Gujarat",
       color: "bg-purple-100",
-      details: "Ahmedabad, Gujarat"
+      details: undefined
     },
     {
       year: "XII",

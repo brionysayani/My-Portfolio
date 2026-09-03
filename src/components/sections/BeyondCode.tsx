@@ -40,11 +40,15 @@ const BeyondCode: React.FC<SectionProps> = ({ isOpen, onToggle }) => {
           >
             <div className="px-6 md:px-10 pb-10">
               <article className="bg-white border-4 border-black rounded-3xl overflow-hidden shadow-neo">
-                <img
-                  src="/hyrox-volunteer.png"
-                  alt="Briony volunteering with the HYROX podium finisher team"
-                  className="w-full aspect-[3/2] object-cover border-b-4 border-black"
-                />
+                <div className="bg-custom-yellow border-b-4 border-black p-6 flex justify-center">
+                  <div className="w-48 sm:w-56 aspect-[3/4] overflow-hidden border-4 border-black rounded-2xl shadow-neo-sm">
+                    <img
+                      src="/hyrox-volunteer.png"
+                      alt="Briony volunteering with the HYROX podium finisher team"
+                      className="w-full h-full object-cover object-left"
+                    />
+                  </div>
+                </div>
 
                 <div className="p-6 md:p-8">
                   <div className="flex flex-wrap items-center gap-3 mb-5">

@@ -44,7 +44,7 @@ const ProjectCard = ({ title, tools, description, link, liveLink, color }: Proje
         ))}
     </div>
 
-    <ul className="list-disc list-inside space-y-2 text-sm font-medium border-t-2 border-black pt-4 mt-auto">
+    <ul className="list-disc list-inside space-y-2 text-sm font-medium border-t-2 border-black pt-4">
         {description.map((point: string, i: number) => (
             <li key={i}>{point}</li>
         ))}
@@ -66,6 +66,17 @@ const Projects = () => {
         ]
       },
       {
+        title: "LinkedIn Profile API",
+        color: "bg-custom-green",
+        tools: ["API", "Backend", "Data Processing"],
+        link: "https://github.com/brionysayani/LinkedIn-Profile-API",
+        liveLink: "https://linked-in-profile-api.vercel.app/",
+        description: [
+          "Created a backend API service for managing and accessing LinkedIn profile data.",
+          "Designed efficient data structures for profile retrieval and processing."
+        ]
+      },
+      {
         title: "Kharcha Tracker",
         color: "bg-custom-pink",
         tools: ["Python", "Jupyter Notebook", "Data Visualization"],
@@ -73,16 +84,6 @@ const Projects = () => {
         description: [
           "Developed a Jupyter Notebook project to track and visualize monthly expenses.",
           "Implemented data processing and visualization logic using Python."
-        ]
-      },
-      {
-        title: "LinkedIn Profile API",
-        color: "bg-custom-green",
-        tools: ["API", "Backend", "Data Processing"],
-        link: "https://github.com/brionysayani/LinkedIn-Profile-API",
-        description: [
-          "Created a backend API service for managing and accessing LinkedIn profile data.",
-          "Designed efficient data structures for profile retrieval and processing."
         ]
       },
       {

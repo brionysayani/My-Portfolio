@@ -46,12 +46,10 @@ const Hero = () => {
 
         <div className="w-full flex flex-col gap-3 mt-6">
           <a
-            href="/Briony-Sayani-Resume.pdf"
-            target="_blank"
-            rel="noreferrer"
+            href="mailto:brionysayani51@gmail.com?subject=Request%20Resume"
             className="bg-custom-green w-full py-3 rounded-xl border-2 border-black font-bold shadow-neo-sm hover:translate-y-1 hover:shadow-none transition-all flex items-center justify-center gap-2 cursor-pointer"
           >
-            <FaDownload /> VIEW_RESUME
+            <FaEnvelope /> REQUEST RESUME
           </a>
           <button
             onClick={() => setIsModalOpen(true)}

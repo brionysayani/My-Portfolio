@@ -10,10 +10,10 @@ interface ResearchCardProps {
 }
 
 const ResearchCard = ({ title, snippet, date, link, color }: ResearchCardProps) => (
-  <div className={`border-4 border-black shadow-neo hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all flex flex-col h-full relative bg-white`}>
+  <div className={`border-4 border-black shadow-neo hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all flex flex-col md:flex-row h-full relative bg-white`}>
 
 
-    <div className={`border-b-4 border-black px-3 py-2 flex justify-between items-center ${color}`}>
+    <div className={`border-b-4 md:border-b-0 md:border-r-4 border-black px-3 py-2 md:w-16 flex md:flex-col justify-between items-center ${color}`}>
       <div className="flex gap-2">
 
         <div className="w-3 h-3 rounded-full bg-white border-2 border-black"></div>
@@ -21,18 +21,18 @@ const ResearchCard = ({ title, snippet, date, link, color }: ResearchCardProps) 
         <div className="w-3 h-3 rounded-full bg-white border-2 border-black"></div>
       </div>
       <span className="font-mono text-[10px] font-black uppercase tracking-widest">
-        research.pdf
+        <span className="md:[writing-mode:vertical-rl] md:rotate-180">research.pdf</span>
       </span>
     </div>
 
 
-    <div className="p-6 flex flex-col flex-grow justify-between">
+    <div className="p-6 md:p-8 flex flex-col flex-grow justify-between">
       <div>
         <div className="flex justify-between items-start mb-4 gap-4">
-          <h3 className="text-xl font-bold leading-snug">{title}</h3>
-          <FaBookOpen className="text-3xl flex-shrink-0" />
+          <h3 className="text-2xl md:text-3xl font-bold leading-snug max-w-3xl">{title}</h3>
+          <FaBookOpen className="text-4xl flex-shrink-0" />
         </div>
-        <p className="text-sm font-medium mb-6 text-gray-700 leading-relaxed">
+        <p className="text-base md:text-lg font-medium mb-6 text-gray-700 leading-relaxed max-w-5xl">
           {snippet}
         </p>
       </div>
@@ -70,7 +70,7 @@ const Blogs = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 gap-8">
         {research.map((paper, i) => (
           <ResearchCard key={i} {...paper} />
         ))}

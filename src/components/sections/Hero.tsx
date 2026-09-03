@@ -19,7 +19,7 @@ const Hero = () => {
           <img
             src="/briony-profile.png"
             alt="Briony Sayani"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-[center_30%] scale-[1.4]"
           />
         </div>
 
@@ -35,11 +35,11 @@ const Hero = () => {
           </div>
           <div>
             <span className="bg-custom-green px-1 border border-black mr-2">[STATUS]</span>
-            2026 GRADUATE
+            RECENT B.TECH GRADUATE
           </div>
           <div>
             <span className="bg-custom-blue px-1 border border-black mr-2">[MISSION]</span>
-            Build Cool Things
+            To Build Cool Things
           </div>
         </div>
 

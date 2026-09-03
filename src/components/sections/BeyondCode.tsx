@@ -39,13 +39,6 @@ const BeyondCode: React.FC<SectionProps> = ({ isOpen, onToggle }) => {
             className="overflow-hidden"
           >
             <div className="px-6 md:px-10 pb-10">
-              <div className="bg-custom-yellow border-4 border-black rounded-2xl shadow-neo p-5 mb-8">
-                <p className="font-shrikhand text-3xl uppercase">I Volunteered</p>
-                <p className="font-bold text-lg mt-2">
-                  Beyond code, I have volunteered in live event operations and college community service.
-                </p>
-              </div>
-
               <article className="bg-white border-4 border-black rounded-3xl overflow-hidden shadow-neo">
                 <div className="bg-custom-yellow border-b-4 border-black p-6 flex justify-center">
                   <div className="w-48 sm:w-56 aspect-[3/4] overflow-hidden border-4 border-black rounded-2xl shadow-neo-sm">
@@ -115,7 +108,7 @@ const BeyondCode: React.FC<SectionProps> = ({ isOpen, onToggle }) => {
                 <img
                   src="/vaatsalyadham-community-service.png"
                   alt="Briony serving meals and spending time with residents at Vaatsalyadham Old Age Home"
-                  className="w-full aspect-[21/9] object-cover border-b-4 border-black"
+                  className="w-full aspect-[4/3] object-cover border-b-4 border-black"
                 />
 
                 <div className="p-6 md:p-8">

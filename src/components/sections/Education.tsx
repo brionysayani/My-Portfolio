@@ -242,7 +242,7 @@ const Education = () => {
         <div className="flex flex-col lg:flex-row gap-8 items-start">
             
             
-            <div className="w-full lg:w-1/3 flex flex-col gap-8 relative">
+            <div className="w-full lg:w-1/3 flex flex-col gap-14 lg:min-h-[600px] lg:justify-between relative">
                
                 <div className="absolute left-8 top-10 bottom-10 w-1 bg-black border-l-4 border-black border-dashed -z-10 opacity-30"></div>
                 

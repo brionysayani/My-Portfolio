@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaGithub, FaLinkedin, FaCode, FaDownload, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaCode, FaDownload, FaEnvelope, FaTwitter } from 'react-icons/fa';
 import ContactModal from '../ui/ContactModal';
 import MiniTerminal from '../ui/MiniTerminal';
 
@@ -62,6 +62,7 @@ const Hero = () => {
           <a href="https://github.com/brionysayani" target="_blank" rel="noreferrer" aria-label="Briony's GitHub" className="hover:scale-110 transition-transform"><FaGithub /></a>
           <a href="https://www.linkedin.com/in/briony-sayani" target="_blank" rel="noreferrer" aria-label="Briony's LinkedIn" className="hover:scale-110 transition-transform text-blue-700"><FaLinkedin /></a>
           <a href="https://leetcode.com/u/briony51/" target="_blank" rel="noreferrer" aria-label="Briony's LeetCode" className="hover:scale-110 transition-transform text-orange-600"><FaCode /></a>
+          <a href="https://x.com/brionysayani" target="_blank" rel="noreferrer" aria-label="Briony's X profile" className="hover:scale-110 transition-transform text-black"><FaTwitter /></a>
         </div>
       </div>
 

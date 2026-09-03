@@ -242,13 +242,15 @@ const Education = () => {
         <div className="flex flex-col lg:flex-row gap-8 items-start">
             
             
-            <div className="w-full lg:w-1/3 flex flex-col gap-14 lg:min-h-[600px] lg:justify-between relative">
+            <div className="w-full lg:w-1/3 flex flex-col lg:min-h-[600px] relative">
                
                 <div className="absolute left-8 top-10 bottom-10 w-1 bg-black border-l-4 border-black border-dashed -z-10 opacity-30"></div>
                 
-                {educationData.map((edu, index) => (
-                    <EduCard key={index} {...edu} />
-                ))}
+                <div className="flex flex-col gap-6">
+                    {educationData.map((edu, index) => (
+                        <EduCard key={index} {...edu} />
+                    ))}
+                </div>
             </div>
 
            

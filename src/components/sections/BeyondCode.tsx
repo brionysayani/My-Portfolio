@@ -105,11 +105,18 @@ const BeyondCode: React.FC<SectionProps> = ({ isOpen, onToggle }) => {
               </article>
 
               <article className="bg-white border-4 border-black rounded-3xl overflow-hidden shadow-neo mt-10">
-                <img
-                  src="/vaatsalyadham-community-service.png"
-                  alt="Briony serving meals and spending time with residents at Vaatsalyadham Old Age Home"
-                  className="w-full aspect-[4/3] object-cover border-b-4 border-black"
-                />
+                <div className="grid grid-cols-1 sm:grid-cols-2 border-b-4 border-black">
+                  <img
+                    src="/community-1.jpeg"
+                    alt="Briony spending time with a resident at Vaatsalyadham Old Age Home"
+                    className="w-full h-full object-cover border-b-4 sm:border-b-0 sm:border-r-4 border-black aspect-video sm:aspect-auto"
+                  />
+                  <img
+                    src="/Photo.jpeg"
+                    alt="Briony with a resident on a swing"
+                    className="w-full h-full object-cover aspect-video sm:aspect-auto"
+                  />
+                </div>
 
                 <div className="p-6 md:p-8">
                   <div className="flex flex-wrap items-center gap-3 mb-5">

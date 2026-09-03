@@ -39,17 +39,19 @@ const Hero = () => {
           </div>
           <div>
             <span className="bg-custom-blue px-1 border border-black mr-2">[MISSION]</span>
-            Build. Automate. Innovate.
+            Build Cool Things
           </div>
         </div>
 
 
         <div className="w-full flex flex-col gap-3 mt-6">
           <a
-            href="mailto:brionysayani51@gmail.com?subject=Resume%20Request"
+            href="/Briony-Sayani-Resume.pdf"
+            target="_blank"
+            rel="noreferrer"
             className="bg-custom-green w-full py-3 rounded-xl border-2 border-black font-bold shadow-neo-sm hover:translate-y-1 hover:shadow-none transition-all flex items-center justify-center gap-2 cursor-pointer"
           >
-            <FaDownload /> REQUEST_RESUME
+            <FaDownload /> VIEW_RESUME
           </a>
           <button
             onClick={() => setIsModalOpen(true)}

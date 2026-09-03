@@ -39,6 +39,13 @@ const BeyondCode: React.FC<SectionProps> = ({ isOpen, onToggle }) => {
             className="overflow-hidden"
           >
             <div className="px-6 md:px-10 pb-10">
+              <div className="bg-custom-yellow border-4 border-black rounded-2xl shadow-neo p-5 mb-8">
+                <p className="font-shrikhand text-3xl uppercase">I Volunteered</p>
+                <p className="font-bold text-lg mt-2">
+                  Beyond code, I have volunteered in live event operations and college community service.
+                </p>
+              </div>
+
               <article className="bg-white border-4 border-black rounded-3xl overflow-hidden shadow-neo">
                 <div className="bg-custom-yellow border-b-4 border-black p-6 flex justify-center">
                   <div className="w-48 sm:w-56 aspect-[3/4] overflow-hidden border-4 border-black rounded-2xl shadow-neo-sm">
@@ -62,6 +69,9 @@ const BeyondCode: React.FC<SectionProps> = ({ isOpen, onToggle }) => {
 
                   <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4 mb-4">
                     <div>
+                      <p className="bg-custom-yellow border-2 border-black px-3 py-1 font-black uppercase w-fit mb-3">
+                        I volunteered with the podium finisher team
+                      </p>
                       <h3 className="text-3xl font-shrikhand">HYROX</h3>
                       <p className="font-bold text-lg mt-1">World Series of Fitness Racing</p>
                     </div>
@@ -105,7 +115,7 @@ const BeyondCode: React.FC<SectionProps> = ({ isOpen, onToggle }) => {
                 <img
                   src="/vaatsalyadham-community-service.png"
                   alt="Briony serving meals and spending time with residents at Vaatsalyadham Old Age Home"
-                  className="w-full aspect-[4/3] object-cover border-b-4 border-black"
+                  className="w-full aspect-[21/9] object-cover border-b-4 border-black"
                 />
 
                 <div className="p-6 md:p-8">
@@ -119,7 +129,12 @@ const BeyondCode: React.FC<SectionProps> = ({ isOpen, onToggle }) => {
                   </div>
 
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
-                    <h3 className="text-3xl font-shrikhand">Vaatsalyadham Old Age Home</h3>
+                    <div>
+                      <p className="bg-custom-pink border-2 border-black px-3 py-1 font-black uppercase w-fit mb-3">
+                        I volunteered as part of college community service
+                      </p>
+                      <h3 className="text-3xl font-shrikhand">Vaatsalyadham Old Age Home</h3>
+                    </div>
                     <a
                       href="https://vatsalyadham.com/"
                       target="_blank"
@@ -131,7 +146,7 @@ const BeyondCode: React.FC<SectionProps> = ({ isOpen, onToggle }) => {
                   </div>
 
                   <p className="font-medium text-lg leading-relaxed mb-6">
-                    As part of my college community service, I volunteered at Vaatsalyadham Old Age Home in Vasai. I helped serve meals and spent meaningful time with residents—an experience that strengthened my empathy, patience, and sense of responsibility toward the community.
+                    As part of my college community service, I volunteered at Vaatsalyadham Old Age Home in Vasai. I helped serve meals and spent meaningful time with residents, an experience that strengthened my empathy, patience, and sense of responsibility toward the community.
                   </p>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

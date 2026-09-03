@@ -1,29 +1,39 @@
 import React from 'react';
-import { FaExternalLinkAlt } from 'react-icons/fa';
+import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 
 interface ProjectCardProps {
   title: string;
   tools: string[];
   description: string[];
   link: string;
+  liveLink?: string;
   color: string;
 }
 
-const ProjectCard = ({ title, tools, description, link, color }: ProjectCardProps) => (
-  <div className={`bg-white border-4 border-black rounded-3xl  p-6 shadow-neo hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all relative overflow-hidden`}>
+const ProjectCard = ({ title, tools, description, link, liveLink, color }: ProjectCardProps) => (
+  <div className={`bg-white border-4 border-black rounded-3xl p-6 shadow-neo hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all relative overflow-hidden flex flex-col`}>
     
     <div className={`absolute top-0 left-0 right-0 h-4 ${color} border-b-4 border-black`}></div>
     
-    <div className="mt-4 flex justify-between items-start mb-4">
+    <div className="mt-4 flex justify-between items-start mb-4 gap-2">
         <div>
-            <h3 className="text-2xl font-shrikhand">{title}</h3>
-            <span className="bg-red-500 text-white text-xs font-bold px-2 py-1 border border-black rounded-md ml-1 animate-pulse">
-                FEATURED PROJECT
+            <h3 className="text-2xl font-shrikhand leading-tight">{title}</h3>
+            {liveLink && (
+            <span className="bg-red-500 text-white text-xs font-bold px-2 py-1 border border-black rounded-md ml-1 animate-pulse inline-block mt-2">
+                FEATURED
             </span>
+            )}
         </div>
-        <a href={link} target="_blank" rel="noreferrer" className="bg-black text-white p-2 rounded-lg hover:bg-gray-800 transition-colors">
-            <FaExternalLinkAlt />
-        </a>
+        <div className="flex gap-2 flex-shrink-0">
+            {liveLink && (
+              <a href={liveLink} target="_blank" rel="noreferrer" className="bg-custom-green text-black border-2 border-black p-2 rounded-lg hover:bg-green-400 transition-colors" title="Live Demo">
+                  <FaExternalLinkAlt />
+              </a>
+            )}
+            <a href={link} target="_blank" rel="noreferrer" className="bg-black text-white border-2 border-black p-2 rounded-lg hover:bg-gray-800 transition-colors" title="Source Code">
+                <FaGithub />
+            </a>
+        </div>
     </div>
 
     <div className="flex flex-wrap gap-2 mb-4">
@@ -34,7 +44,7 @@ const ProjectCard = ({ title, tools, description, link, color }: ProjectCardProp
         ))}
     </div>
 
-    <ul className="list-disc list-inside space-y-2 text-sm font-medium border-t-2 border-black pt-4">
+    <ul className="list-disc list-inside space-y-2 text-sm font-medium border-t-2 border-black pt-4 mt-auto">
         {description.map((point: string, i: number) => (
             <li key={i}>{point}</li>
         ))}
@@ -44,6 +54,37 @@ const ProjectCard = ({ title, tools, description, link, color }: ProjectCardProp
 
 const Projects = () => {
     const projects = [
+      {
+        title: "AI Recruitment Platform",
+        color: "bg-custom-blue",
+        tools: ["React", "TypeScript", "Python", "Supabase"],
+        link: "https://github.com/brionysayani/AI_Recuritment_Platform",
+        liveLink: "https://ai-recuritment-platform.vercel.app",
+        description: [
+          "Built an intelligent hiring management platform streamlining recruitment processes.",
+          "Integrated AI-powered CV evaluation, candidate tracking, and project management."
+        ]
+      },
+      {
+        title: "Kharcha Tracker",
+        color: "bg-custom-pink",
+        tools: ["Python", "Jupyter Notebook", "Data Visualization"],
+        link: "https://github.com/brionysayani/Kharcha-Tracker",
+        description: [
+          "Developed a Jupyter Notebook project to track and visualize monthly expenses.",
+          "Implemented data processing and visualization logic using Python."
+        ]
+      },
+      {
+        title: "LinkedIn Profile API",
+        color: "bg-custom-green",
+        tools: ["API", "Backend", "Data Processing"],
+        link: "https://github.com/brionysayani/LinkedIn-Profile-API",
+        description: [
+          "Created a backend API service for managing and accessing LinkedIn profile data.",
+          "Designed efficient data structures for profile retrieval and processing."
+        ]
+      },
       {
         title: "Algorithmic Trading Bot",
         color: "bg-custom-purple", 
@@ -65,11 +106,10 @@ const Projects = () => {
           "Calculated average turnaround time, waiting time, response time, and throughput."
         ]
       }
-
     ];
 
   return (
-    <section id="projects" className="py-10 px-4 mx-auto max-w-7xl  bg-custom-yellow border-2 border-b-4 border-r-4 border-black rounded-3xl shadow-neo">
+    <section id="projects" className="py-10 px-4 mx-auto max-w-7xl bg-custom-yellow border-2 border-b-4 border-r-4 border-black rounded-3xl shadow-neo">
       <div className="flex items-center gap-4 mb-10">
         <div className="bg-custom-green px-8 py-3 rounded-full border-4 border-black shadow-neo">
             <h2 className="text-3xl font-shrikhand text-white">PROJECTS</h2>

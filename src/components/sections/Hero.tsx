@@ -16,8 +16,11 @@ const Hero = () => {
 
 
         <div className="w-32 h-32 bg-custom-pink rounded-full border-4 border-black mb-4 flex items-center justify-center text-4xl overflow-hidden">
-          <span className="font-shrikhand text-5xl" aria-label="Briony Sayani initials">BS</span>
-
+          <img
+            src="/briony-profile.png"
+            alt="Briony Sayani"
+            className="w-full h-full object-cover"
+          />
         </div>
 
         <h1 className="text-4xl font-shrikhand mb-1">BRIONY SAYANI</h1>

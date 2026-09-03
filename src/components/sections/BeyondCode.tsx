@@ -107,8 +107,8 @@ const BeyondCode: React.FC<SectionProps> = ({ isOpen, onToggle }) => {
               <article className="bg-white border-4 border-black rounded-3xl overflow-hidden shadow-neo mt-10">
                 <img
                   src="/vaatsalyadham-community-service.png"
-                  alt="Briony serving meals and spending time with residents at Vaatsalyadham Old Age Home"
-                  className="w-full aspect-[4/3] object-cover border-b-4 border-black"
+                  alt="Briony spending time with a resident at Vaatsalyadham Old Age Home"
+                  className="w-full aspect-video object-cover object-bottom border-b-4 border-black"
                 />
 
                 <div className="p-6 md:p-8">

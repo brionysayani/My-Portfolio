@@ -44,6 +44,4 @@ A personal portfolio website built with modern web technologies to showcase proj
 - `npm run preview`: Bootstraps a local web server to preview the production build.
 - `npm run lint`: Runs ESLint to check for code issues.
 
-## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).

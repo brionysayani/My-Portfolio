@@ -224,14 +224,14 @@ const Education = () => {
     {
       year: "XII",
       title: "Senior Secondary",
-      place: "St. Francis School, Jamnagar",
+      place: "St. Francis School, Jamnagar, Gujarat",
       color: "bg-blue-100",
       details: undefined
     },
     {
       year: "X",
       title: "Secondary",
-      place: "St. Francis School, Jamnagar",
+      place: "St. Francis School, Jamnagar, Gujarat",
       color: "bg-pink-100",
       details: undefined
     }

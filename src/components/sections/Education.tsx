@@ -154,7 +154,7 @@ const Blackboard = () => {
   };
 
   return (
-    <div className="h-[400px] md:h-[600px] w-full bg-[#2a2a2a] border-8 border-custom-yellow rounded-3xl shadow-neo relative overflow-hidden group">
+    <div className="h-[480px] sm:h-[560px] lg:h-full min-h-[560px] lg:min-h-[700px] w-full bg-[#2a2a2a] border-8 border-custom-yellow rounded-3xl shadow-neo relative overflow-hidden group">
       
       <div className="absolute inset-0 pointer-events-none opacity-20 bg-[url('https://www.transparenttextures.com/patterns/black-chalk.png')]"></div>
       
@@ -192,7 +192,7 @@ const Blackboard = () => {
       </div>
 
      
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white/10 font-shrikhand text-4xl pointer-events-none select-none">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white/10 font-shrikhand text-3xl sm:text-4xl md:text-5xl pointer-events-none select-none">
         DRAW HERE!
       </div>
 
@@ -238,7 +238,7 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="py-10 px-4 max-w-7xl mx-auto bg-custom-green border-2 border-b-4 border-r-4 border-black rounded-3xl shadow-neo">
+    <section id="education" className="py-10 px-4 max-w-7xl mx-auto bg-custom-green border-2 border-b-4 border-r-4 border-black rounded-3xl shadow-neo lg:min-h-[760px]">
         
         <div className="flex justify-center mb-10">
             <div className="bg-white px-8 py-3 rounded-full border-4 border-black w-fit shadow-neo ">
@@ -246,10 +246,10 @@ const Education = () => {
             </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-8 items-start">
+        <div className="flex flex-col lg:flex-row gap-8 items-stretch">
             
             
-            <div className="w-full lg:w-1/3 flex flex-col lg:min-h-[600px] relative">
+            <div className="w-full lg:w-1/3 flex flex-col lg:min-h-[700px] relative">
                
                 <div className="absolute left-8 top-10 bottom-10 w-1 bg-black border-l-4 border-black border-dashed -z-10 opacity-30"></div>
                 
@@ -261,7 +261,7 @@ const Education = () => {
             </div>
 
            
-            <div className="w-full lg:w-2/3 sticky top-24">
+<div className="w-full lg:w-2/3 lg:self-stretch lg:min-h-[700px] sticky top-24">
                 <Blackboard />
                 <p className="text-center font-mono font-bold mt-4 bg-white inline-block px-4 py-1 border-2 border-black rounded-full shadow-sm mx-auto block w-fit">
                     ✨ Bored? Doodle something cool!

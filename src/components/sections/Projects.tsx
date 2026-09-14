@@ -59,7 +59,7 @@ const Projects = () => {
         color: "bg-custom-blue",
         tools: ["React", "TypeScript", "Python", "Supabase"],
         link: "https://github.com/brionysayani/AI_Recuritment_Platform",
-        liveLink: "https://ai-recuritment-platform.vercel.app",
+        liveLink: "https://github.com/brionysayani/My-Portfolio.git",
         description: [
           "Built an intelligent hiring management platform streamlining recruitment processes.",
           "Integrated AI-powered CV evaluation, candidate tracking, and project management."
